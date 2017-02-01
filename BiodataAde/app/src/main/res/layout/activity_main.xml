@@ -17,7 +17,8 @@
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textSize="16dp" />
+        android:textSize="16dp"
+        android:textColor="#040400" />
 
     <ImageView
         android:layout_width="90dp"
@@ -37,7 +38,7 @@
         android:layout_below="@+id/imageView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="17dp" />
+        android:textColor="#0b0202" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -47,7 +48,8 @@
         android:layout_below="@+id/textView2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:textSize="10dp" />
+        android:textSize="10dp"
+        android:textColor="#0f0202" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -69,7 +71,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:textSize="9dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textColor="#050000" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -80,7 +83,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:textSize="9dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textColor="#0b0101" />
 
     <Space
         android:layout_width="20px"
@@ -100,7 +104,8 @@
         android:layout_below="@+id/textView6"
         android:layout_alignRight="@+id/textView"
         android:layout_alignEnd="@+id/textView"
-        android:textSize="15dp" />
+        android:textSize="15dp"
+        android:textColor="#100404" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -112,6 +117,7 @@
         android:layout_marginTop="23dp"
         android:layout_below="@+id/textView7"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textColor="#180202" />
 
 </RelativeLayout>
