@@ -12,7 +12,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-
+    public final static String Extra ="com";
     @Override
     protected void onCreate(Bundle savedInstanceState)  {
         super.onCreate(savedInstanceState);
@@ -28,14 +28,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
     }
-    public void showMessage(View view){
-        //contoh explicit intent
-        Intent intent=new Intent(this, ShowMessage.class);
-        TextView txtMessage=(TextView) findViewById((R.id.txt_message));
-        intent.putExtra(Extra,txtMessage.getText().toString());
-        startActivity(intent);
 
-    }
 public void calculate(View view){
     EditText input1=(EditText) findViewById(R.id.input1);
     EditText input2=(EditText) findViewById(R.id.input2);
@@ -71,8 +64,12 @@ double inp2 = 0,inp1 = 0, inp3 = 0;
         hasil = "Luas Dari Bola adalah : "+(4/3*(Math.PI*(inp1*inp1*inp1)))+"\n";
         hasil += "Jari Dari Bola adalah : "+(4*Math.PI*(inp1*inp1))+"\n";
     }
-    TextView result=(TextView) findViewById(R.id.result);
-    result.setText(hasil);
+
+
+    Intent intent=new Intent(this,hasil.class);
+    intent.putExtra(Extra,hasil.toString());
+    startActivity(intent);
+
 
 }
     @Override

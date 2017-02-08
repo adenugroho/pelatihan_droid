@@ -22,6 +22,14 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+    public void showEmail(View view){
+        //contoh explicit intent
+        Intent intent=new Intent(this, activity_send_email.class);
+        TextView txtMessage=(TextView) findViewById((R.id.txt_message));
+        intent.putExtra(Extra,txtMessage.getText().toString());
+        startActivity(intent);
+
+    }
     public void openBrowser(View view){
         //membuka activity yang akan di buka di ekplisit intent
 
@@ -42,4 +50,5 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(Extra,"map");
         startActivity(intent);
     }
+
 }

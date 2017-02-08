@@ -47,4 +47,11 @@
         android:textStyle="bold"
         android:text="open Peta"
         android:onClick="openPeta"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:text="Email"
+        android:onClick="showEmail"/>
 </LinearLayout>
